@@ -1,7 +1,6 @@
 {
   "expo": {
     "name": "air-ball",
-    "entryPoint": "./assets/pages/start/index",
     "slug": "air-ball",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -12,10 +11,12 @@
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
+      
     },
     "ios": {
       "supportsTablet": true
     },
+    
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
@@ -34,5 +35,6 @@
     "experiments": {
       "typedRoutes": true
     }
+    
   }
 }
