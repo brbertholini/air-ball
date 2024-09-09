@@ -34,8 +34,8 @@ export default function Index() {
       </View>
 
       <View style={styles.buttonContainer}>
-        <OrangeButton title="Junte-se a nós" width={190} href="/Screens/SignUp" />
-        <TransparentButton title="Entrar" width={120} href="/Screens/SignIn" />
+        <OrangeButton title="Junte-se a nós" width={190} href="/screens/SignUp" />
+        <TransparentButton title="Entrar" width={120} href="/screens/SignIn" />
       </View>
     </View>
   );

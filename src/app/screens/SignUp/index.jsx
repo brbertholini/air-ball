@@ -36,7 +36,7 @@ const SignUp = () => {
   
         <Text style={styles.SigninText}>
           Já tem uma conta?{' '}
-          <Link href="/Screens/SignIn" style={styles.SigninLink}>
+          <Link href="/screens/SignIn" style={styles.SigninLink}>
             Entrar
           </Link>
         </Text>
