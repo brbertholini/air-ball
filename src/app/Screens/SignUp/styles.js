@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
       color: '#FFF',
       marginLeft:48,
       fontSize: 18,
-      marginBottom: 60,
+      marginBottom: 20,
       fontFamily: 'inter_28pt-SemiBold'
     },
     forgotPassword: {
