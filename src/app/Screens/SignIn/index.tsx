@@ -36,7 +36,7 @@ const Signin = () => {
 
       <Text style={styles.registerText}>
         Não tem uma conta?{' '}
-        <Link href="/screens/SignUp" style={styles.registerLink}>
+        <Link href="/Screens/SignUp" style={styles.registerLink}>
           Registrar
         </Link>
       </Text>
