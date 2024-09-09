@@ -1,6 +1,7 @@
 import { View, Text, Image, Pressable,StyleSheet} from 'react-native';
 import { useFonts } from 'expo-font';
-import { Link}  from 'expo-router';
+import OrangeButton from './components/OrangeButton/index';
+import TransparentButton from './components/TransparentButton/index';
 
 export default function Index() {
   const [fontsLoaded] = useFonts({
@@ -33,21 +34,8 @@ export default function Index() {
       </View>
 
       <View style={styles.buttonContainer}>
-        <Pressable
-          style={styles.buttonLeft}
-          onPress={() => {}}
-        >
-          <Text style={styles.buttonText}>Junte-se a nós</Text>
-        </Pressable>
-
-        <Pressable
-          style={styles.buttonRight}
-          onPress={() => {}}
-        >
-           <Link href="/pages/SignIn">
-              <Text style={styles.buttonText}>Entrar</Text>
-            </Link>
-        </Pressable>
+        <OrangeButton title="Junte-se a nós" width={190} href="/screens/SignUp" />
+        <TransparentButton title="Entrar" width={120} href="/screens/SignIn" />
       </View>
     </View>
   );
@@ -97,23 +85,5 @@ const styles = StyleSheet.create({
       flexDirection: 'row',
       justifyContent: 'space-between',
     },
-    buttonLeft: {
-      backgroundColor: '#FF6D00',
-      padding: 10,
-      borderRadius: 20,
-    },
-    buttonText: {
-      color: '#FFFFFF',
-      fontSize: 20,
-      fontFamily: 'inter_28pt-Bold'
-    },
-    buttonRight: {
-      backgroundColor: '#121212',
-      borderWidth: 1,
-      borderColor: '#FFFFFF',
-      borderRadius: 20,
-      paddingVertical: 10,
-      paddingHorizontal: 20,
-      color: '#FFFFFF',
-    }
+
   });
