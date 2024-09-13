@@ -1,40 +1,30 @@
 import { StyleSheet } from 'react-native';
 
-const styles = StyleSheet.create({
+export default StyleSheet.create({
   container: {
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    backgroundColor: '#f8f8f8',
     paddingVertical: 10,
-    borderBottomWidth: 1,
-    borderBottomColor: '#ddd',
+    backgroundColor: '#FFF',
+    position: 'absolute',  // Mantém a barra fixa
+    bottom: 0,  // Posiciona na parte inferior
+    left: 0,  // Alinha à esquerda
+    right: 0,  // Alinha à direita
+    width: '100%',  // Garante que a barra ocupe 100% da largura
+    borderTopWidth: 1,  // Adiciona uma linha na parte superior para separação
+    borderTopColor: '#E0E0E0',  // Cor da linha de separação
   },
   navItem: {
     alignItems: 'center',
-    justifyContent: 'center',
-  },
-  icon: {
-    marginBottom: 4,
   },
   text: {
-    fontSize: 14,
-    color: '#333',
-    fontFamily: 'Poppins', // Ensure this font is available in your project
+    fontFamily: 'Poppins',
+    color: '#E0E0E0', // Cor do texto padrão, será atualizada dinamicamente
   },
   logo: {
-    width: 30,
-    height: 30,
-    resizeMode: 'contain',
-    marginBottom: 4,
-  },
-  selected: {
-    color: '#FF6D00',
-  },
-  notSelected: {
-    color: '#E0E0E0',
+    width: 24,
+    height: 24,
   },
 });
-
-export default styles;
 
