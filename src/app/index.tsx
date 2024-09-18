@@ -1,13 +1,13 @@
 import { View, Text, Image, Pressable,StyleSheet} from 'react-native';
-import { useFonts } from 'expo-font';
 import OrangeButton from './components/OrangeButton/index';
 import TransparentButton from './components/TransparentButton/index';
+import useCustomFonts from '../hooks/useCustomFonts'
 
 export default function Index() {
-  const [fontsLoaded] = useFonts({
-    'inter_28pt-Bold': require('../assets/fonts/Bold.ttf'),
-  });
-
+ 
+  // função para usar a fonte Inter
+  const fontsLoaded = useCustomFonts();
+  
   if (!fontsLoaded) {
     return null;
   }
