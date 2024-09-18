@@ -1,15 +1,14 @@
 import { View, Text, TextInput, Button, StyleSheet, TouchableOpacity,Image } from 'react-native';
-import { useFonts } from 'expo-font';
+import useCustomFonts from '../../../hooks/useCustomFonts'
 import Input from '../../components/Input/index';
 import TransparentButton from '../../components/TransparentButton/index';
 import { styles } from './styles';
 import { Link } from 'expo-router';
 
 const Signin = () => {
-  const [fontsLoaded] = useFonts({
-    'inter_28pt-Bold': require('../../../assets/fonts/Bold.ttf'),
-  });
-
+  
+  const fontsLoaded = useCustomFonts();
+  
   if (!fontsLoaded) {
     return null;
   }

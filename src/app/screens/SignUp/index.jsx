@@ -1,17 +1,15 @@
 import { View, Text,Image } from 'react-native';
-import { useFonts } from 'expo-font';
 import Input from '../../components/Input/index';
 import OrangeButton from '../../components/OrangeButton/index';
 import { styles } from './styles';
 import { Link } from 'expo-router';
+import useCustomFonts from '../../../hooks/useCustomFonts'
+
 
 const SignUp = () => {
-    const [fontsLoaded] = useFonts({
-      'inter_28pt-Bold': require('../../../assets/fonts/Bold.ttf'),
-      'inter_28pt-SemiBold': require('../../../assets/fonts/SemiBold.ttf'),
-      'inter_28pt-Regular': require('../../../assets/fonts/Regular.ttf'),
-    });
-  
+    
+    const fontsLoaded = useCustomFonts();
+    
     if (!fontsLoaded) {
       return null;
     }
