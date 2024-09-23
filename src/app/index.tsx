@@ -37,6 +37,9 @@ export default function Index() {
         <OrangeButton title="Junte-se a nós" width={190} href="/screens/SignUp" />
         <TransparentButton title="Entrar" width={120} href="/screens/SignIn" />
       </View>
+      
+
+      <Text style={styles.noSigninLink}>Entrar sem cadastrar</Text>
     </View>
   );
 }
@@ -84,6 +87,16 @@ const styles = StyleSheet.create({
       right: 20,
       flexDirection: 'row',
       justifyContent: 'space-between',
+      marginBottom:35
     },
+    noSigninLink: {
+      textAlign:'center',
+      justifyContent:'center',
+      color:'#FFFFFF',
+      fontWeight:'bold',
+      fontSize: 18,
+      marginBottom:15
+
+    }
 
   });
