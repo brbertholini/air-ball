@@ -30,7 +30,7 @@ const Signin = () => {
       </TouchableOpacity>
 
       <View style={styles.buttonContainer}>
-        <TransparentButton title="Continuar" width={265} href="" />
+        <TransparentButton title="Continuar" width={265} href="/screens/Home" />
       </View>
 
       <Text style={styles.registerText}>
